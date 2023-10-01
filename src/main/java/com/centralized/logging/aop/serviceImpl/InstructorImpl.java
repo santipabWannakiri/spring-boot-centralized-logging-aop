@@ -21,7 +21,7 @@ public class InstructorImpl implements InstructorService {
 
     @Override
     public void save(Instructor instructor) {
-    instructorRepository.save(instructor);
+        instructorRepository.save(instructor);
     }
 
     @Override
@@ -36,6 +36,6 @@ public class InstructorImpl implements InstructorService {
 
     @Override
     public void deleteById(int id) {
-    instructorRepository.deleteById(id);
+        instructorRepository.deleteById(id);
     }
 }

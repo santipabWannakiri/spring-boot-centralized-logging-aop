@@ -9,6 +9,7 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
+import java.util.List;
 import java.util.Optional;
 
 @RestController
@@ -35,5 +36,15 @@ public class InstructorController {
         return instructorService.findById(id)
                 .map(c -> ResponseEntity.status(HttpStatus.OK).body(c))
                 .orElseGet (() -> ResponseEntity.notFound().build());
+    }
+
+    @GetMapping("/instructors")
+    public ResponseEntity<?> getAllInstructor(){
+        List<Instructor> listResult = instructorService.findAll();
+        if(listResult.size() != 0 ){
+            return ResponseEntity.status(HttpStatus.OK).body(listResult);
+        }else {
+            return ResponseEntity.status(HttpStatus.NOT_FOUND).body("[]");
+        }
     }
 }
