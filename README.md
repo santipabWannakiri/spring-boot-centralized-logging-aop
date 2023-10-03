@@ -27,3 +27,15 @@ And to get the class name and method name, we need to call another class and pro
 ## Aspect-Oriented Programming (AOP)
 To address these concerns, we can consider using Aspect-Oriented Programming (AOP) in conjunction with Spring AOP and SLF4J.\
 AOP allows for the modularization of cross-cutting concerns. `Simply put, we are going to centralize logging.`
+
+In Aspect-Oriented Programming (AOP), annotations are used to define aspects and specify where and how they should be applied in the codebase. In the context of Spring AOP, which is an AOP framework provided by the Spring Framework, several annotations are commonly used to create and configure aspects. Here are some key annotations related to AOP in Spring:
+
+`@Aspect:` This annotation is used to declare a class as an aspect. An aspect contains advice (code to be executed) and pointcuts (conditions where the advice should be applied).
+
+`@Before:` This annotation is used to define a method as a "before" advice, meaning the method is executed before the matched method.
+
+`@AfterThrowing:` This annotation is used to define a method as an "after-throwing" advice, meaning the method is executed if the matched method throws an exception.
+
+`@Around:` This annotation is used to define a method as an "around" advice, meaning the method can control the entire execution, including when and if to proceed to the matched method.
+
+`@Pointcut:` This annotation is used to define a reusable pointcut expression. It allows you to name a pointcut expression and reuse it across multiple advice methods.
