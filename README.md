@@ -26,5 +26,4 @@ And to get the class name and method name, we need to call another class and pro
 
 ## Aspect-Oriented Programming (AOP)
 To address these concerns, we can consider using Aspect-Oriented Programming (AOP) in conjunction with Spring AOP and SLF4J.\
-AOP allows to modularize cross-cutting concerns. 
-`Simply put we are going to create centralize logging.`
+AOP allows for the modularization of cross-cutting concerns. `Simply put, we are going to centralize logging.`
