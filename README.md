@@ -13,6 +13,7 @@ Basically, to write a log in Spring Boot, you have to initialize a logger instan
 ```java
 Logger logger = LoggerFactory.getLogger(LogController.class);
 ```
+## Logging With Lombok
 Or the other way that is more convenient than above is to use `Lombok`. You need to add lombok dependency, and then just put annotation `@Slf4j` on top of the class that you would like to logger. And once you log, you can call log.info, log.debug, etc. without initializing a logger instance.
 
 ![enter image description here](images/logger-lombok.png)
