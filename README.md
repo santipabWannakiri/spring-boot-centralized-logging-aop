@@ -17,3 +17,11 @@ Logger logger = LoggerFactory.getLogger(LogController.class);
 Or the other way that is more convenient than above is to use `Lombok`. You need to add lombok dependency, and then just put annotation `@Slf4j` on top of the class that you would like to logger. And once you log, you can call log.info, log.debug, etc. without initializing a logger instance.
 
 ![enter image description here](images/logger-lombok.png)
+
+From the example code above, you're going to see that I captured the logger in two steps.\
+`First one: when a method save was called. I capture the class name, method name, and request payload.`\
+`Second one: after the method is saved, I capture the class name, method name, and response payload.`
+
+And to get the class name and method name, we need to call another class and provide some hardcode as well. While this approach is straightforward and effective, But let's see if we have 10 or 20 methods, and they are also placed in different classes. This will have potential drawbacks, especially in terms of performance impact, impact on log analysis, and maintenance overhead.
+
+
