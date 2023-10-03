@@ -25,10 +25,10 @@ From the example code above, you're going to see that I captured the logger in t
 And to get the class name and method name, we need to call another class and provide some hardcode as well. While this approach is straightforward and effective, But let's see if we have 10 or 20 methods, and they are also placed in different classes. This will have potential drawbacks, especially in terms of performance impact, impact on log analysis, and maintenance overhead.
 
 ## Aspect-Oriented Programming (AOP)
-To address these concerns, we can consider using Aspect-Oriented Programming (AOP) in conjunction with Spring AOP and SLF4J.\
+To address these concerns, we can consider using AOP in conjunction with Spring AOP and SLF4J.\
 AOP allows for the modularization of cross-cutting concerns. `Simply put, we are going to centralize logging.`
 
-In Aspect-Oriented Programming (AOP), annotations are used to define aspects and specify where and how they should be applied in the codebase. In the context of Spring AOP, which is an AOP framework provided by the Spring Framework, several annotations are commonly used to create and configure aspects. Here are some key annotations related to AOP in Spring:
+In AOP, annotations are used to define aspects and specify where and how they should be applied in the codebase. In the context of Spring AOP, which is an AOP framework provided by the Spring Framework, several annotations are commonly used to create and configure aspects. Here are some key annotations related to AOP in Spring:
 
 `@Aspect:` This annotation is used to declare a class as an aspect. An aspect contains advice (code to be executed) and pointcuts (conditions where the advice should be applied).
 
