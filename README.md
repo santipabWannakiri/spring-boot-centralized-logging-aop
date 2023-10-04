@@ -41,3 +41,8 @@ In AOP, annotations are used to define aspects and specify where and how they sh
 `@After:` Specifies advice to be executed regardless of the outcome of a matched method.
 
 `@Around:` Specifies advice to be executed around a matched method, allowing custom logic before and after method execution.
+
+Choosing which one depends on the specific requirements of your use case. for example \
+`What information do you want to capture?`\
+`Which point in the method execution process do you want to capture this information?`\
+`Do you need to customize or modify anything before recording the information in the log file?`
