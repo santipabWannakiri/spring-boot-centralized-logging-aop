@@ -30,12 +30,14 @@ AOP allows for the modularization of cross-cutting concerns. `Simply put, we are
 
 In AOP, annotations are used to define aspects and specify where and how they should be applied in the codebase. In the context of Spring AOP, which is an AOP framework provided by the Spring Framework, several annotations are commonly used to create and configure aspects. Here are some key annotations related to AOP in Spring:
 
-`@Aspect:` This annotation is used to declare a class as an aspect. An aspect contains advice (code to be executed) and pointcuts (conditions where the advice should be applied).
+`@Aspect:` Declares a class as an aspect, allowing it to contain advice methods.
 
-`@Before:` This annotation is used to define a method as a "before" advice, meaning the method is executed before the matched method.
+`@Before:` Specifies advice to be executed before the execution of a matched method.
 
-`@AfterThrowing:` This annotation is used to define a method as an "after-throwing" advice, meaning the method is executed if the matched method throws an exception.
+`@AfterReturning:` Specifies advice to be executed after the successful execution of a matched method.
 
-`@Around:` This annotation is used to define a method as an "around" advice, meaning the method can control the entire execution, including when and if to proceed to the matched method.
+`@AfterThrowing:` Specifies advice to be executed if a matched method throws an exception.
 
-`@Pointcut:` This annotation is used to define a reusable pointcut expression. It allows you to name a pointcut expression and reuse it across multiple advice methods.
+`@After:` Specifies advice to be executed regardless of the outcome of a matched method.
+
+`@Around:` Specifies advice to be executed around a matched method, allowing custom logic before and after method execution.
