@@ -67,3 +67,11 @@ According to the requirements above, we're going to analyze and implement them b
    * 1. Choose a suitable annotation to capture the log. 
    * 2. Configure to capture at the service level (Pointcut)
    * 3. Configure log format
+
+#### 1. Configure the AOP central logging class.
+<img src="images/aop-configure-annotation.png" alt="image description" width="250" height="100">
+
+`@Aspect`  declares a class as an aspect in Spring AOP. An aspect is a module that encapsulates advice, pointcuts, and introductions.\
+`@Component` Spring component, that automatically detected and registered as a Spring bean during component scanning.\
+`@Slf4j` a Lombok annotation that generates a logger field for the class using SLF4J.\
+`class` is named LoggingAspect, suggesting its role as an aspect responsible for logging concerns.
