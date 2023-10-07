@@ -82,3 +82,5 @@ The appropriate candidate would be `@Before`. \
 And the pointcut configuration can be done by using an expression to tell AOP that we will capture logs at the service level.\
 The final step, we just get varialbe like lass name, method name, and request payload. Then put all of them in our log format.
 <img src="images/example-entry-log.png" alt="image description">
+
+#### 3. Configure to capture a log `after` executing the function.
