@@ -46,3 +46,12 @@ In AOP, annotations are used to define aspects and specify where and how they sh
 > * What information do you want to capture?
 > * Which point in the method execution process do you want to capture this information?
 > * Do you need to customize or modify anything before recording the information in the log file?
+
+## Example requirement
+Let's say the requirement has specifications for the following:
+* Capture log at service level
+* Capture log 2 step
+   * 1. When entering the function, you have to print the class name, method name, and request payload.
+   * 2. When the function is done, you have to print the class name, method name, and response payload.
+* The log format would be like this:
+   ![enter image description here](images/example-log-format.png)
