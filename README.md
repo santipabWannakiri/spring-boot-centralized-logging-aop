@@ -61,9 +61,9 @@ According to the requirements above, we're going to analyze and implement them b
 1. Configure the AOP central logging class.
 2. Configure to capture a log `before` executing the function.
    * 1. Choose a suitable annotation to capture the log.
-   * 2. Configure to capture at the service level
+   * 2. Configure to capture at the service level (Pointcut)
    * 3. Configure log format
 3. Configure to capture a log `after` executing the function.
-   * 1. Choose a suitable annotation to capture the log.
-   * 2. Configure to capture at the service level
+   * 1. Choose a suitable annotation to capture the log. 
+   * 2. Configure to capture at the service level (Pointcut)
    * 3. Configure log format
