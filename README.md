@@ -55,3 +55,15 @@ Let's say the requirement has specifications for the following:
    * 2. When the function is done, you have to print the class name, method name, and response payload.
 * The log format would be like this:
    ![enter image description here](images/example-log-format.png)
+
+## Implementation
+According to the requirements above, we're going to analyze and implement them based on the AOP concept in the following step.
+1. Configure the AOP central logging class.
+2. Configure to capture a log `before` executing the function.
+   * 1. Choose a suitable annotation to capture the log.
+   * 2. Configure to capture at the service level
+   * 3. Configure log format
+3. Configure to capture a log `after` executing the function.
+   * 1. Choose a suitable annotation to capture the log.
+   * 2. Configure to capture at the service level
+   * 3. Configure log format
