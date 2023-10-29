@@ -90,11 +90,16 @@ However, there is a problem that make us unable to use @After in this case.
 
 Since the response payload from services can be empty or a response with a list of objects or just objects, in addition, there is a log format that we need to follow.\
 These things mean we need to check the response type and arrange them in correct format before writing a log.
+```java
+@After is suitable for simple post-processing; it doesn't allow us to transform or check anything with the response payload.
+```
+Example our response object.
 
 <img src="images/get-instructor-id.png"  alt="image description" width="600" height="180">
 <img src="images/get-list-instructors.png"  alt="image description" width="600" height="180">
 
+
+Therefore, for us to be able to check object type and arrange in the appropriate log format, I would like to suggest using `@Around`.
 ```java
-@After is suitable for simple post-processing; it doesn't allow us to transform or check anything with the response payload.
+@Around advice allows you to check the type of the response object and make modifications accordingly. You can customize this approach to suit your specific requirements, whether it involves type checking, payload transformation, or other processing logic.
 ```
-So we need to find another annotation candidate intead of @After because we need to customer
