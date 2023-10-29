@@ -85,5 +85,12 @@ The final step, we just get varialbe like lass name, method name, and request pa
 
 #### 3. Configure to capture a log `after` executing the function.
 In this step, we need to do the same thing as above, but we will capture logs `after` a function's executed.\
-You might think the appropriate candidate would be `@After`, because it's quite straightforward right.
-However, there are a few problems that make us unable to use @After in this case.
+You might think the appropriate candidate would be `@After`, because it's quite straightforward right.\
+However, there is a problem that make us unable to use @After in this case.
+```java
+Since the response payload from services can be null or a response with a list of objects or just objects,
+in addition, there is a log format that we need to follow.
+These things mean we need to check the response type and arrange them in correct format before writing a log.
+
+
+```
