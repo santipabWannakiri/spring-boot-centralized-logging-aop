@@ -91,6 +91,6 @@ However, there is a problem that make us unable to use @After in this case.
 Since the response payload from services can be null or a response with a list of objects or just objects,
 in addition, there is a log format that we need to follow.
 These things mean we need to check the response type and arrange them in correct format before writing a log.
-
-
 ```
+<img src="images/get-instructor-id.png"  alt="image description" width="600" height="180">
+<img src="images/get-list-instructors.png"  alt="image description" width="600" height="180">
