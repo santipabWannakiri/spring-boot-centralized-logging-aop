@@ -93,7 +93,7 @@ These things mean we need to check the response type and arrange them in correct
 ```java
 @After is suitable for simple post-processing; it doesn't allow us to transform or check anything with the response payload.
 ```
-Example our response object.
+Example possibilities of type of response.
 
 <img src="images/get-instructor-id.png"  alt="image description" width="600" height="180">
 <img src="images/get-list-instructors.png"  alt="image description" width="600" height="180">
@@ -103,3 +103,5 @@ Therefore, for us to be able to check object type and arrange in the appropriate
 ```java
 @Around advice allows you to check the type of the response object and make modifications accordingly. You can customize this approach to suit your specific requirements, whether it involves type checking, payload transformation, or other processing logic.
 ```
+And here, the final configuration to capture logs from different types of object responses would be like the following:
+<img src="images/around-configuration.png">
