@@ -77,10 +77,12 @@ According to the requirements above, we're going to analyze and implement them b
 `class` is named LoggingAspect, suggesting its role as an aspect responsible for logging concerns.
 
 #### 2. Configure to capture a log `before` executing the function.
-In this step, we need to find a suitable annotation candidate to capture the log before a function's going to execute.\
+In this step, we need to find a suitable annotation candidate to capture the log `before` a function's going to execute.\
 The appropriate candidate would be `@Before`. \
 And the pointcut configuration can be done by using an expression to tell AOP that we will capture logs at the service level.\
 The final step, we just get varialbe like lass name, method name, and request payload. Then put all of them in our log format.
 <img src="images/example-entry-log.png" alt="image description">
 
 #### 3. Configure to capture a log `after` executing the function.
+In this step, we need to do the same thing as above, but we will capture logs `after` a function's executed.\
+You might think the appropriate candidate would be `@After`, because it's quite straightforward right.
