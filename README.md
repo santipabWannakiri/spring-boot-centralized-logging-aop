@@ -98,7 +98,6 @@ Example possibilities of type of response.
 <img src="images/get-instructor-id.png"  alt="image description" width="600" height="180">
 <img src="images/get-list-instructors.png"  alt="image description" width="600" height="180">
 
-
 Therefore, for us to be able to check object type and arrange in the appropriate log format, I would like to suggest using `@Around`.
 ```java
 @Around advice allows you to check the type of the response object and make modifications accordingly. You can customize this approach to suit your specific requirements, whether it involves type checking, payload transformation, or other processing logic.
